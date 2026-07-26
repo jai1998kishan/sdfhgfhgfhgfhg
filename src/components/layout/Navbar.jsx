@@ -61,7 +61,7 @@
 //       <div className="container-x flex items-center justify-between h-20">
 //         <div className="flex items-center gap-6">
 //           <NavLink to="/" className="font-display text-2xl tracking-tight">
-//             Halston<span className="text-clay">.</span>
+//             ApnaGhar<span className="text-clay">.</span>
 //           </NavLink>
 //           <button
 //             onClick={() => setOpen((v) => !v)}
@@ -388,7 +388,7 @@ export default function Navbar() {
             to="/"
             className="font-display font-extrabold text-3xl tracking-tight"
           >
-            Halston<span className="text-clay">.</span>
+            ApnaGhar<span className="text-clay">.</span>
           </Link>
           <button
             onClick={() => setOpen((v) => !v)}

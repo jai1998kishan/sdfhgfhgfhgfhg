@@ -1,6 +1,6 @@
-# Halston — Architecture Studio (React + Vite + Tailwind)
+# ApnaGhar — Architecture Studio (React + Vite + Tailwind)
 
-A React clone of the Halston architecture Webflow template.
+A React clone of the ApnaGhar architecture Webflow template.
 
 ## Stack
 

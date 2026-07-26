@@ -21,7 +21,7 @@
 //   {
 //     year: "2003",
 //     title: "Studio Founded",
-//     text: "Halston began as a small architecture practice focused on residential design.",
+//     text: "ApnaGhar began as a small architecture practice focused on residential design.",
 //   },
 //   {
 //     year: "2010",
@@ -78,7 +78,7 @@
 
 //           <div className="space-y-6 text-lg text-[#4a3a34]/75 leading-relaxed">
 //             <p>
-//               Halston is an architecture studio creating refined residential,
+//               ApnaGhar is an architecture studio creating refined residential,
 //               commercial, and cultural environments.
 //             </p>
 
@@ -142,7 +142,7 @@
 //             </blockquote>
 
 //             <p className="mt-8 font-mono text-sm uppercase tracking-widest">
-//               Alexander Halston
+//               Alexander ApnaGhar
 //               <br />
 //               Founder & Principal Architect
 //             </p>
@@ -238,7 +238,7 @@ const timeline = [
   {
     year: "2003",
     title: "Studio Founded",
-    text: "Halston began as an architecture studio focused on residential spaces.",
+    text: "ApnaGhar began as an architecture studio focused on residential spaces.",
   },
   {
     year: "2010",
@@ -336,7 +336,7 @@ const About = () => {
 
           <div className="space-y-6 text-lg text-[#4a3a34]/70">
             <p>
-              Halston is an architecture and interior design studio creating
+              ApnaGhar is an architecture and interior design studio creating
               refined residential, commercial and cultural spaces.
             </p>
             <p>
@@ -383,7 +383,7 @@ const About = () => {
               "Architecture is about creating experiences, not objects."
             </h2>
             <p className="mt-8 font-mono text-sm uppercase">
-              Alexander Halston
+              Alexander ApnaGhar
               <br />
               Founder & Principal Architect
             </p>

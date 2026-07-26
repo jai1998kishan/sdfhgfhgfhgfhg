@@ -57,7 +57,7 @@ const Footer = () => {
               to="/"
               className="font-display text-2xl md:text-3xl text-[#2d2420]"
             >
-              Halston
+              ApnaGhar
             </Link>
           </div>
 

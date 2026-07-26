@@ -9,10 +9,10 @@ export default function About() {
       <div className="grid gap-16 md:grid-cols-12 items-start">
         <div className="md:col-span-7">
           <h2 className="display text-4xl md:text-6xl leading-[1.05] max-w-3xl">
-            Founded in 2003, Halston is a deliberately small practice. The
+            Founded in 2003, ApnaGhar is a deliberately small practice. The
             principal architect leads every project from brief to handover — so
-            the thinking that shapes the first sketch carries all the way through
-            to the last detail on site.
+            the thinking that shapes the first sketch carries all the way
+            through to the last detail on site.
           </h2>
 
           <div className="mt-16">

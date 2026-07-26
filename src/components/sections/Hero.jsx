@@ -15,7 +15,11 @@ export default function Hero() {
         <div className="fade-up">
           <p className="eyebrow text-ink/70">Bespoke</p>
           <h1 className="display mt-6 text-[clamp(3.5rem,12vw,12rem)] text-ink">
-            living<br />defined<br />by clarity
+            living
+            <br />
+            defined
+            <br />
+            by clarity
           </h1>
         </div>
 
@@ -29,7 +33,12 @@ export default function Hero() {
               >
                 <span className="font-display text-2xl">{d.title}</span>
                 <span className="flex items-center gap-3 text-xs font-mono uppercase tracking-widest2">
-                  Explore <Plus size={16} strokeWidth={1.2} className="transition-transform group-hover:rotate-90" />
+                  Explore{" "}
+                  <Plus
+                    size={16}
+                    strokeWidth={1.2}
+                    className="transition-transform group-hover:rotate-90"
+                  />
                 </span>
               </a>
             ))}
@@ -38,15 +47,19 @@ export default function Hero() {
           <div className="md:col-span-4 md:col-start-9">
             <p className="eyebrow mb-4">Recognition</p>
             <ul className="space-y-2 text-sm">
-              {recognitions.map((r) => <li key={r}>{r}</li>)}
+              {recognitions.map((r) => (
+                <li key={r}>{r}</li>
+              ))}
             </ul>
           </div>
         </div>
 
         <div className="mt-16 flex items-center justify-between">
           <div>
-            <p className="font-display text-4xl">Halston</p>
-            <p className="eyebrow mt-1">Architecture & interior design studio</p>
+            <p className="font-display text-4xl">ApnaGhar</p>
+            <p className="eyebrow mt-1">
+              Architecture & interior design studio
+            </p>
           </div>
           <a href="#contact" className="btn-pill hidden md:inline-flex">
             Consultation <Plus size={14} strokeWidth={1.5} />
