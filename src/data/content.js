@@ -96,51 +96,6 @@ export const clients = [
 //   },
 // ];
 
-export const projects = [
-  {
-    title: "Wannsee Residence",
-    copy: "A 420 m² family residence on a lakeside site at Wannsee, Berlin, completed in 2024.",
-    place: "Wannsee, Berlin, Germany",
-    year: "2024",
-    image: `${CDN}/6a0b54cf47e90151576ed31f_interior-shot-6.avif`,
-  },
-  {
-    title: "Hexagon Office",
-    copy: "A 4,800 m² headquarters building for an independent media company in Berlin Mitte, completed in 2023.",
-    place: "Mitte, Berlin, Germany",
-    year: "2023",
-    image: `${CDN}/6a0b54b6d6de7f34f29081a3_exterior-through-window-8.avif`,
-  },
-  {
-    title: "Speicherstadt Hotel",
-    copy: "A 38-key boutique hotel and ground-floor restaurant in a 19th century Speicherstadt warehouse in Hamburg.",
-    place: "Speicherstadt, Hamburg, Germany",
-    year: "2024",
-    image: `${CDN}/6a0b54a83d63e20441d6e6cf_exterior-through-window-6.avif`,
-  },
-];
-
-export const testimonials = [
-  {
-    role: "Homeowner",
-    name: "Hanna Bennett",
-    quote:
-      "From architecture to interior styling, the entire process felt thoughtful and seamless. The atmosphere they created exceeded our expectations.",
-  },
-  {
-    role: "Residence owner",
-    name: "Lukas Walker",
-    quote:
-      "Working with ApnaGhar felt collaborative from the very beginning. The balance of materials, lighting, and spatial flow completely changed how we experience our home.",
-  },
-  {
-    role: "Private client",
-    name: "Emma Hofstetter",
-    quote:
-      "The level of refinement throughout the project was exceptional. The spaces feel intentional, balanced, and beautifully composed.",
-  },
-];
-
 export const journal = [
   {
     tag: "Project Stories",

@@ -106,9 +106,11 @@
 //           >
 //             ApnaGhar<span className="text-clay">.</span>
 //           </Link>
+
+//           {/* Desktop menu button — unchanged position, just hidden on mobile now */}
 //           <button
 //             onClick={() => setOpen((v) => !v)}
-//             className="inline-flex items-center gap-2 bg-[#8a6f66]  text-white border hairline rounded-sm px-2 py-2 text-[11px] uppercase tracking-widest2 font-mono hover:bg-[#2d2420] hover:text-bone transition-colors"
+//             className="hidden md:inline-flex items-center gap-2 bg-[#7e665e] text-white border hairline rounded-sm px-2 py-2 text-[11px] uppercase tracking-widest2 font-mono hover:bg-[#2d2420] hover:text-bone transition-colors"
 //             aria-expanded={open}
 //             aria-label={open ? "Close menu" : "Open menu"}
 //           >
@@ -119,6 +121,7 @@
 //             )}
 //             {open ? "Close" : "Menu"}
 //           </button>
+
 //           {open && (
 //             <span className="hidden md:inline text-[11px] uppercase tracking-widest2 font-mono text-muted">
 //               Architecture Studio
@@ -173,11 +176,29 @@
 //         )}
 
 //         {!open && (
-//           <Link to="/contact" className="btn-pill">
+//           <Link
+//             to="/contact"
+//             className="hidden md:inline-flex btn-pill border border-b-4 hover:bg-[#5E3E3E]"
+//           >
 //             Consultation
 //             <Plus size={14} strokeWidth={1.5} />
 //           </Link>
 //         )}
+
+//         {/* Mobile-only menu button, positioned on the far right */}
+//         <button
+//           onClick={() => setOpen((v) => !v)}
+//           className="md:hidden inline-flex items-center gap-2 bg-[#8a6f66] text-white border hairline rounded-sm px-2 py-2 text-[11px] uppercase tracking-widest2 font-mono hover:bg-[#2d2420] hover:text-bone transition-colors"
+//           aria-expanded={open}
+//           aria-label={open ? "Close menu" : "Open menu"}
+//         >
+//           {open ? (
+//             <X size={14} strokeWidth={1.75} />
+//           ) : (
+//             <MenuIcon size={14} strokeWidth={1.75} />
+//           )}
+//           {open ? "Close" : "Menu"}
+//         </button>
 //       </div>
 
 //       <MegaMenu open={open} onClose={() => setOpen(false)} />
@@ -275,7 +296,7 @@
 //             <span className="text-[11px] uppercase tracking-widest2 font-mono opacity-70">
 //               Get in touch
 //             </span>
-//             <div className="mt-4 space-y-2 font-display text-lg sm:text-xl leading-snug text-[#efeae2]">
+//             <div className="mt-4 space-y-2 font-display text-lg sm:text-xl leading-snug text-[#efeae2] ">
 //               <div>Consultation</div>
 //               <Link
 //                 to="mailto:company@example.com"
@@ -363,7 +384,7 @@
 //   );
 // }
 
-//========================================
+//================================================
 
 import { useEffect, useState } from "react";
 import { Plus, Menu as MenuIcon, X } from "lucide-react";
@@ -416,18 +437,44 @@ const featuredProject = {
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [visible, setVisible] = useState(true);
   const location = useLocation();
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // Don't hide navbar when menu is open
+      if (open) {
+        setLastScrollY(currentScrollY);
+        return;
+      }
+
+      // Update scrolled state for background
+      setScrolled(currentScrollY > 40);
+
+      // Hide/show logic
+      if (currentScrollY > lastScrollY && currentScrollY > 80) {
+        // Scrolling down - hide navbar
+        setVisible(false);
+      } else if (currentScrollY < lastScrollY) {
+        // Scrolling up - show navbar
+        setVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY, open]);
 
   useEffect(() => {
     if (open) {
       document.body.style.overflowY = "scroll";
       document.body.classList.add("menu-open");
+      setVisible(true); // Show navbar when menu opens
     } else {
       document.body.style.overflowY = "";
       document.body.classList.remove("menu-open");
@@ -459,7 +506,9 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 inset-x-0 z-40 transition-colors duration-500 ${
+      className={`fixed inset-x-0 top-0 z-40 transition-all duration-300 ${
+        visible ? "translate-y-0" : "-translate-y-full"
+      } ${
         open || scrolled
           ? "bg-bone/95 backdrop-blur-md border-b hairline"
           : "bg-transparent"
@@ -477,7 +526,7 @@ export default function Navbar() {
           {/* Desktop menu button — unchanged position, just hidden on mobile now */}
           <button
             onClick={() => setOpen((v) => !v)}
-            className="hidden md:inline-flex items-center gap-2 bg-[#8a6f66] text-white border hairline rounded-sm px-2 py-2 text-[11px] uppercase tracking-widest2 font-mono hover:bg-[#2d2420] hover:text-bone transition-colors"
+            className="hidden md:inline-flex items-center gap-2 bg-[#7e665e] text-white border hairline rounded-sm px-2 py-2 text-[11px] uppercase tracking-widest2 font-mono hover:bg-[#2d2420] hover:text-bone transition-colors"
             aria-expanded={open}
             aria-label={open ? "Close menu" : "Open menu"}
           >
@@ -543,7 +592,10 @@ export default function Navbar() {
         )}
 
         {!open && (
-          <Link to="/contact" className="hidden md:inline-flex btn-pill">
+          <Link
+            to="/contact"
+            className="hidden md:inline-flex btn-pill border border-b-4 hover:bg-[#5E3E3E]"
+          >
             Consultation
             <Plus size={14} strokeWidth={1.5} />
           </Link>
@@ -660,7 +712,7 @@ function MegaMenu({ open, onClose }) {
             <span className="text-[11px] uppercase tracking-widest2 font-mono opacity-70">
               Get in touch
             </span>
-            <div className="mt-4 space-y-2 font-display text-lg sm:text-xl leading-snug text-[#efeae2]">
+            <div className="mt-4 space-y-2 font-display text-lg sm:text-xl leading-snug text-[#efeae2] ">
               <div>Consultation</div>
               <Link
                 to="mailto:company@example.com"
