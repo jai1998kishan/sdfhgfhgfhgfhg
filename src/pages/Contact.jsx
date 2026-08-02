@@ -108,26 +108,53 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="pt-32 pb-20 px-4 md:px-8 max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-end">
-          <div>
-            <span className="text-[11px] uppercase tracking-widest font-mono text-[#4a3a34] opacity-60 block mb-4">
-              Get in touch
-            </span>
-            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl tracking-tight text-[#4a3a34]">
-              Contact
-            </h1>
-          </div>
-          <div className="flex flex-col gap-3 lg:items-end text-[#4a3a34]">
+      <section className="pt-10 pb-10 mt-10 lg:mt-0 md:pt-2 md:pb-8 lg:pt-16 lg:pb-12 px-2 md:px-2 max-w-6xl mx-auto">
+        {/* Heading */}
+        <div className="">
+          {/* <span className="text-[10px]  uppercase tracking-widest font-mono text-[#4a3a34] opacity-60 block mb-3 md:mb-4">
+            Get in touch
+          </span> */}
+          <h1 className="uppercase font-sans font-medium text-xl sm:text-3xl md:text-2xl lg:text-3xl tracking-tight text-black">
+            Contact
+          </h1>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-6 md:gap-10 items-start mt-2 pt-2 md:mt-4 md:pt-2 border-t border-[#4a3a34]/20">
+          <p className="font-mono text-xs md:text-sm uppercase tracking-widest text-[#4a3a34]">
+            Let&rsquo;s discuss your space
+          </p>
+
+          <div className="flex flex-col ">
+            {/* Email */}
+            <div className="flex items-center justify-between pb-3 md:pb-4">
+              <span className="font-mono text-[11px] uppercase tracking-widest text-[#4a3a34] opacity-60">
+                Email
+              </span>
+              <span className="inline-flex items-center gap-2 border border-[#4a3a34]/30 rounded-sm px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-[#4a3a34]/70">
+                <span className="w-1.5 h-1.5 rounded-full bg-current" />
+                Helpdesk
+              </span>
+            </div>
             <a
               href="mailto:company@example.com"
-              className="font-mono text-sm uppercase tracking-widest hover:text-[#a5673f] transition-colors"
+              className="font-mono text-lg sm:text-xl md:text-2xl lg:text-3xl uppercase tracking-tight text-[#4a3a34] hover:text-[#a5673f] transition-colors pb-4 md:pb-5 border-b border-[#4a3a34]/20"
             >
               company@example.com
             </a>
+
+            {/* Phone */}
+            <div className="flex items-center justify-between pt-5 pb-3 md:pt-6 md:pb-4">
+              <span className="font-mono text-[11px] uppercase tracking-widest text-[#4a3a34] opacity-60">
+                Phone
+              </span>
+              <span className="inline-flex items-center gap-2 border border-[#4a3a34]/30 rounded-sm px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-[#4a3a34]/70">
+                <span className="w-1.5 h-1.5 rounded-full bg-current" />
+                Mon &ndash; Fri
+              </span>
+            </div>
             <a
               href="tel:+493028048000"
-              className="font-mono text-sm uppercase tracking-widest hover:text-[#a5673f] transition-colors"
+              className="font-mono text-lg sm:text-xl md:text-2xl lg:text-3xl tracking-tight text-[#4a3a34] hover:text-[#a5673f] transition-colors"
             >
               +49 30 28 04 8000
             </a>
@@ -135,43 +162,55 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Intro + team */}
-      <section className="px-4 md:px-8 max-w-7xl mx-auto pb-24">
-        <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-start">
-          <p className="font-display text-3xl md:text-4xl leading-[1.2] tracking-tight text-[#2d2420] max-w-lg">
-            Let's discuss your space.
-          </p>
+      <section className="px-2 md:px-2 max-w-6xl mx-auto pb-6 md:pb-10">
+        <div className="grid lg:grid-cols-2 gap-6 md:gap-10">
+          <div className="hidden lg:block" />
 
-          <div className="grid sm:grid-cols-2 gap-10">
+          <div className="border border-[#4a3a34]/15 divide-y divide-[#4a3a34]/15 bg-[#dedbd2]">
             {team.map((person) => (
-              <div key={person.name}>
-                <div className="aspect-[4/5] overflow-hidden rounded-sm mb-5">
+              <div
+                key={person.name}
+                className="flex items-stretch gap-3 md:gap-4 p-3 md:p-4"
+              >
+                <div className="w-14 h-14 md:w-16 md:h-16 shrink-0 overflow-hidden">
                   <img
                     src={person.image}
                     alt={person.name}
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <p className="font-display text-xl text-[#2d2420]">
-                  {person.name}
-                </p>
-                <p className="font-mono text-xs uppercase tracking-widest text-[#a5673f] mt-1 mb-3">
-                  {person.role}
-                </p>
-                <div className="flex items-center gap-4">
-                  <a
-                    href={`mailto:${person.email}`}
-                    className="text-sm text-[#4a3a34]/70 hover:text-[#4a3a34] transition-colors"
-                  >
-                    {person.email}
-                  </a>
-                  <a
-                    href="#"
-                    aria-label={`${person.name} on LinkedIn`}
-                    className="text-[#4a3a34]/70 hover:text-[#4a3a34] transition-colors"
-                  >
-                    <Linkedin size={16} strokeWidth={1.5} />
-                  </a>
+
+                <div className="flex-1 min-w-0 flex flex-col">
+                  <p className="font-display text-sm md:text-base uppercase tracking-tight text-[#2d2420]">
+                    {person.name}
+                  </p>
+
+                  <div className="mt-2 pt-2 border-t border-[#4a3a34]/15 flex-1 flex flex-col justify-between">
+                    <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+                      <span className="font-mono text-[10px] uppercase tracking-widest text-[#4a3a34] opacity-60">
+                        {person.role}
+                      </span>
+                      <a
+                        href={`mailto:${person.email}`}
+                        className="font-mono text-[10px] uppercase tracking-widest text-[#a5673f] hover:text-[#4a3a34] transition-colors"
+                      >
+                        {person.email}
+                      </a>
+                      <a
+                        href="#"
+                        aria-label={`${person.name} on LinkedIn`}
+                        className="font-mono text-[10px] uppercase tracking-widest text-[#4a3a34]/70 hover:text-[#4a3a34] transition-colors"
+                      >
+                        LinkedIn
+                      </a>
+                      <a
+                        href="#"
+                        className="font-mono text-[10px] uppercase tracking-widest text-[#4a3a34]/70 hover:text-[#4a3a34] transition-colors"
+                      >
+                        About
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
@@ -179,7 +218,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="relative min-h-[90vh] lg:min-h-[85vh] pb-24">
+      <section className="relative lg:min-h-[85vh] pb-16 lg:pb-24">
         <div className="relative h-full">
           {/* Background Image */}
           <img
@@ -189,8 +228,9 @@ export default function ContactPage() {
           />
           <div className="absolute inset-0 bg-black/40" />
 
-          {/* Reduced container height and padding */}
-          <div className="relative max-w-7xl mx-auto grid lg:grid-cols-2 lg:gap-6 h-full min-h-[90vh] lg:min-h-[85vh] items-center px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
+          {/* Mobile: natural height, content starts at the top.
+              Desktop (lg): back to the fixed-height, vertically centered split. */}
+          <div className="relative max-w-7xl mx-auto grid lg:grid-cols-2 lg:gap-6 lg:h-full lg:min-h-[85vh] lg:items-center px-4 sm:px-6 lg:px-8 pt-6 pb-6 lg:py-12">
             {/* Left Side - Heading - Hidden on mobile, visible on desktop */}
             <div className="hidden lg:flex flex-col justify-center text-white lg:pr-4">
               <div className="inline-flex items-center gap-2 border border-white/40 px-4 py-1.5 w-fit mb-6">
@@ -214,22 +254,22 @@ export default function ContactPage() {
             </div>
 
             {/* Mobile Heading - Visible only on mobile */}
-            <div className="lg:hidden text-center text-white mb-4">
-              <div className="inline-flex items-center gap-2 border border-white/40 px-4 py-1.5 w-fit mx-auto mb-4">
-                <span className="w-2 h-2 rounded-full bg-white/80" />
-                <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/90">
+            <div className="lg:hidden text-center text-white mb-3">
+              <div className="inline-flex items-center gap-2 border border-white/40 px-3 py-1 w-fit mx-auto mb-3">
+                <span className="w-1.5 h-1.5 rounded-full bg-white/80" />
+                <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-white/90">
                   Form
                 </span>
               </div>
-              <h2 className="font-serif font-bold leading-[1.1] tracking-tight">
-                <span className="text-4xl sm:text-5xl block">Schedule</span>
-                <span className="text-4xl sm:text-5xl block">An Expertise</span>
-                <span className="text-4xl sm:text-5xl block">Consultation</span>
+              <h2 className="font-serif font-bold leading-[1.15] tracking-tight">
+                <span className="text-2xl sm:text-3xl block">Schedule</span>
+                <span className="text-2xl sm:text-3xl block">An Expertise</span>
+                <span className="text-2xl sm:text-3xl block">Consultation</span>
               </h2>
             </div>
 
             {/* Right Side - Form Card */}
-            <div className="backdrop-blur-md bg-white/10 p-5 sm:p-6 md:p-7 w-full max-w-md sm:max-w-lg lg:max-w-2xl mx-auto lg:mx-0 border border-white/20">
+            <div className="backdrop-blur-md bg-white/50 p-4 sm:p-5 md:p-7 w-full max-w-md sm:max-w-lg lg:max-w-2xl mx-auto lg:mx-0 border border-white/20">
               <ContactForm />
             </div>
           </div>

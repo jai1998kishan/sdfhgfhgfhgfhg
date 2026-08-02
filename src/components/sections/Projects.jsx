@@ -31,9 +31,9 @@ export default function Projects() {
               <div className="absolute inset-x-0 bottom-0 p-6 md:p-12 text-bone ">
                 <Link
                   to={p.href}
-                  className="inline-flex items-center gap-3 bg-bone text-ink px-5 py-2 rounded-sm hover:opacity-80 transition"
+                  className="inline-flex items-center gap-3 bg-bone text-ink px-5 py-2 rounded-sm hover:opacity-80 hover-fill transition"
                 >
-                  <span className="font-sans font-black text-lg md:text-2xl">
+                  <span className="font-sans font-black text-lg md:text-2xl ">
                     {p.title}
                   </span>
                   <Plus

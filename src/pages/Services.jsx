@@ -90,7 +90,7 @@ const ServicesPage = () => {
                     <button
                       onClick={() => setExpandedId(isOpen ? null : service.id)}
                       aria-expanded={isOpen}
-                      className="group inline-flex items-center justify-between gap-6 w-full sm:w-auto sm:min-w-[280px] border border-[#4a3a34] px-6 py-4 font-mono text-sm uppercase tracking-widest text-[#4a3a34] transition-colors hover:bg-[#4a3a34] hover:text-[#efeae2]"
+                      className="group inline-flex items-center justify-between gap-6 w-full sm:w-auto sm:min-w-[280px] border border-[#4a3a34] px-6 py-4 font-mono text-sm uppercase tracking-widest text-[#4a3a34] transition-colors hover-split-up"
                     >
                       Service Details
                       {isOpen ? (

@@ -17,6 +17,7 @@
   --font-display: "Cormorant Garamond", serif;
   --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
+  --font-heading: "Helvetica", sans-serif;
 
   --section-y: clamp(4rem, 8vw, 8rem);
   --container-x: clamp(1.25rem, 4vw, 3rem);
@@ -177,4 +178,72 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+}
+
+/* Split bottom-to-top fill */
+.hover-split-up {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  transition: color 0.45s ease;
+}
+
+.hover-split-up::before,
+.hover-split-up::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  background: var(--hover-fill-color, #5e3e3e);
+  transform: translateY(100%);
+  z-index: -1;
+}
+
+.hover-split-up::before {
+  left: 0;
+  transition: transform 0.35s ease;
+}
+
+.hover-split-up::after {
+  right: 0;
+  transition: transform 0.35s ease 0.12s; /* delay */
+}
+
+.hover-split-up:hover::before,
+.hover-split-up:hover::after {
+  transform: translateY(0);
+}
+
+.hover-split-up:hover {
+  color: var(--hover-text-color, #fff);
+}
+
+/* ================================================ */
+
+/* Left-to-right fill hover effect */
+.hover-fill {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  transition: color 0.45s ease;
+}
+
+.hover-fill::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--hover-fill-color, #5e3e3e);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.45s ease;
+  z-index: -1;
+}
+
+.hover-fill:hover::before {
+  transform: scaleX(1);
+}
+
+.hover-fill:hover {
+  color: var(--hover-text-color, #fff);
 }

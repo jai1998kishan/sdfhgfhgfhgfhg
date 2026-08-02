@@ -59,7 +59,7 @@ export default function About() {
 
             <Link
               to="/about"
-              className="btn-pill mt-8 md:mt-10 flex w-full max-w-[250px] items-center justify-between border border-b-4 hover:bg-[#5E3E3E]"
+              className="btn-pill mt-8 md:mt-10 flex w-full max-w-[250px] items-center justify-between border border-b-4 hover-split-up"
             >
               <span>About us</span>
               <Plus size={18} strokeWidth={1.5} />

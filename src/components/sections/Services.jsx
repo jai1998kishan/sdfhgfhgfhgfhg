@@ -187,7 +187,7 @@ export default function Services() {
               href="#"
               onMouseMove={(e) => handleMouseMove(e, i)}
               onMouseEnter={(e) => handleMouseMove(e, i)}
-              className="group relative z-10 flex items-center gap-4 sm:gap-5 px-2 md:px-6 py-6 sm:py-8 border-b  border-clay hairline transition-colors hover:bg-[#5E3E3E]"
+              className="group relative z-10 flex items-center gap-4 sm:gap-5 px-2 md:px-6 py-6 sm:py-8 border-b  border-clay hairline transition-colors hover-split-up"
             >
               <span className="hidden sm:inline eyebrow shrink-0 w-6 text-bone/40 group-hover:text-bone/70">
                 {s.id}

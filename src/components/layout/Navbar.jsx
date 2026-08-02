@@ -594,7 +594,7 @@ export default function Navbar() {
         {!open && (
           <Link
             to="/contact"
-            className="hidden md:inline-flex btn-pill border border-b-4 hover:bg-[#5E3E3E]"
+            className="hidden md:inline-flex btn-pill border border-b-4 hover-split-up"
           >
             Consultation
             <Plus size={14} strokeWidth={1.5} />
