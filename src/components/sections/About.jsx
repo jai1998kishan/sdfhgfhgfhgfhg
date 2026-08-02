@@ -10,11 +10,11 @@ export default function About() {
       {/* =========================
           FIRST SPLIT SECTION
       ========================== */}
-      <div className="grid min-h-[90vh] md:grid-cols-5 bg-[#5E3E3E]">
-        {/* Left: Text */}
-        <div className="md:col-span-2  text-bone flex items-end">
+      <div className="grid md:min-h-[90vh] md:grid-cols-5 bg-[#5E3E3E]">
+        {/* Text — sits at the top on mobile, bottom-aligned at md+ */}
+        <div className="md:col-span-2 text-bone flex items-start md:items-end">
           <div className="p-6 md:p-10 lg:p-12">
-            <h2 className="font-sans text-xl md:text-2xl lg:text-2xl leading-[1.08] max-w-xl">
+            <h2 className="font-sans text-xl md:text-2xl lg:text-2xl font-medium leading-[1.15] max-w-xl">
               Founded in 2003, ApnaGhar is a deliberately small practice. The
               principal architect leads every project from brief to handover —
               so the thinking that shapes the first sketch carries all the way
@@ -23,8 +23,8 @@ export default function About() {
           </div>
         </div>
 
-        {/* Right: Image */}
-        <div className="md:col-span-3 min-h-[60vh] md:min-h-0">
+        {/* Image — natural height on mobile, fills the column at md+ */}
+        <div className="md:col-span-3 aspect-[4/3] md:aspect-auto md:min-h-0">
           <img
             src={`${CDN}/6a060cd7503d72ff714e65ff_48c19f09c8468d5bc67a2efb745438e2_template-img-3.avif`}
             alt="Modern residential interior"
@@ -37,9 +37,9 @@ export default function About() {
       {/* =========================
           SECOND SPLIT SECTION
       ========================== */}
-      <div className="grid min-h-[90vh] md:grid-cols-2 bg-clay ">
-        {/* Left: Image */}
-        <div className="min-h-[60vh] md:min-h-0 p-4">
+      <div className="grid md:min-h-[90vh] md:grid-cols-2 bg-clay">
+        {/* Image — natural height on mobile, fills the column at md+ */}
+        <div className="aspect-[4/3] md:aspect-auto md:min-h-0 p-4">
           <img
             src={`${CDN}/6a060cd7503d72ff714e6608_d9376cd23fdf1d712352ed21555d1256_small-portrait1.avif`}
             alt="ApnaGhar studio"
@@ -48,10 +48,10 @@ export default function About() {
           />
         </div>
 
-        {/* Right: Text */}
+        {/* Text */}
         <div className="flex items-start">
           <div className="p-6 md:p-10 lg:p-12">
-            <h3 className="font-sans text-xl md:text-2xl lg:text-3xl leading-[1.08] max-w-2xl">
+            <h3 className="font-sans text-xl md:text-2xl lg:text-3xl font-medium leading-[1.15] max-w-2xl">
               Every project begins with reading the site and the brief honestly,
               then deciding what the new work should add, contrast, or preserve.
               Nothing is drawn before the questions have been asked properly.
@@ -59,7 +59,7 @@ export default function About() {
 
             <Link
               to="/about"
-              className="btn-pill mt-10 flex w-full max-w-[250px] items-center justify-between border border-b-4 hover:bg-[#5E3E3E]"
+              className="btn-pill mt-8 md:mt-10 flex w-full max-w-[250px] items-center justify-between border border-b-4 hover:bg-[#5E3E3E]"
             >
               <span>About us</span>
               <Plus size={18} strokeWidth={1.5} />
