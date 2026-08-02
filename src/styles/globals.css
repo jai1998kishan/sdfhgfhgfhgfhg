@@ -15,7 +15,7 @@
   --color-line: rgba(26, 25, 23, 0.14);
 
   --font-display: "Cormorant Garamond", serif;
-  --font-sans: "Inter", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
   --section-y: clamp(4rem, 8vw, 8rem);
