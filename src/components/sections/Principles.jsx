@@ -1,8 +1,6 @@
-"use client";
-
 import { useState } from "react";
 import { Plus, X } from "lucide-react";
-import { principles } from "@/data/principles";
+import { principles } from "@/data/principles.js";
 
 export default function Principles() {
   const [openIndex, setOpenIndex] = useState(null);
