@@ -22,7 +22,7 @@ const achievements = [
   {
     id: 3,
     title:
-      "Founded in 2003, ApnaGhar has built a specialist architectural practice over twenty-three years focused on residential, commercial and cultural architecture.",
+      "Founded in 2003, ApnaGhars has built a specialist architectural practice over twenty-three years focused on residential, commercial and cultural architecture.",
     label: "Years In Practice",
     value: "23",
     image:

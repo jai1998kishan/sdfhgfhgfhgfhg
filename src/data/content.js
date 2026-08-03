@@ -133,14 +133,14 @@ export const contactPeople = [
   {
     name: "Jonas Hartmann",
     role: "Senior Architect",
-    email: "jonas@ApnaGhar.studio",
+    email: "jonas@ApnaGhars.studio",
     linkedin: "https://www.linkedin.com/in/jonas-hartmann",
     img: "https://cdn.prod.website-files.com/6a060cd7503d72ff714e629a/6a0f1cabedc52a0803de0f50_portrait-1-avatar.avif",
   },
   {
     name: "Lena Brandt",
     role: "Design Director",
-    email: "lena@ApnaGhar.studio",
+    email: "lena@ApnaGhars.studio",
     linkedin: "https://www.linkedin.com/in/lena-brandt",
     img: "https://cdn.prod.website-files.com/6a060cd7503d72ff714e629a/6a0f1ca515d0d4b3432b3b76_portrait-2-avatar.avif",
   },
@@ -167,8 +167,8 @@ export const contactOffices = [
 
 export const faqs = [
   {
-    q: "What services does ApnaGhar provide?",
-    a: "ApnaGhar provides architectural and interior architecture services across six specialist offerings: residential architecture, interior architecture, heritage renovation, hospitality interiors, home staging and property styling, and material consultation. The studio is based in Berlin and Hamburg and works with private and institutional clients across diverse markets.",
+    q: "What services does ApnaGhars provide?",
+    a: "ApnaGhars provides architectural and interior architecture services across six specialist offerings: residential architecture, interior architecture, heritage renovation, hospitality interiors, home staging and property styling, and material consultation. The studio is based in Berlin and Hamburg and works with private and institutional clients across diverse markets.",
   },
   {
     q: "How long does a typical project take?",
@@ -180,7 +180,7 @@ export const faqs = [
   },
   {
     q: "Do you work on international projects?",
-    a: "Yes. ApnaGhar is based in Berlin and Hamburg and works with private and institutional clients on projects in diverse international markets, coordinating with consultant partners on site as required.",
+    a: "Yes. ApnaGhars is based in Berlin and Hamburg and works with private and institutional clients on projects in diverse international markets, coordinating with consultant partners on site as required.",
   },
   {
     q: "What is your design process?",
@@ -192,6 +192,6 @@ export const faqs = [
   },
   {
     q: "What size of projects do you take on?",
-    a: "ApnaGhar works on projects from approximately 80 m² through to 1,500 m². Our typical residential project is 200 to 600 m². We are selective about smaller projects and accept them only where the brief justifies full studio engagement.",
+    a: "ApnaGhars works on projects from approximately 80 m² through to 1,500 m². Our typical residential project is 200 to 600 m². We are selective about smaller projects and accept them only where the brief justifies full studio engagement.",
   },
 ];

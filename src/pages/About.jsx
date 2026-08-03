@@ -46,7 +46,7 @@ const timeline = [
   {
     year: "2003",
     title: "Studio Founded",
-    text: "ApnaGhar began as an architecture studio focused on residential spaces.",
+    text: "ApnaGhars began as an architecture studio focused on residential spaces.",
   },
   {
     year: "2010",
@@ -149,7 +149,7 @@ const About = () => {
           <div className="md:col-span-2 text-black flex items-start md:items-end">
             <div className="p-6 md:p-10 lg:p-12">
               <h2 className="font-sans text-xl md:text-2xl lg:text-2xl font-medium leading-[1.15] max-w-xl">
-                ApnaGhar is an architecture and interior design studio working
+                ApnaGhars is an architecture and interior design studio working
                 on private houses, considered interiors, and heritage homes. We
                 take the brief, the site, and the client equally seriously, from
                 the first conversation to the final detail.
@@ -176,7 +176,7 @@ const About = () => {
           <div className="aspect-[4/3] md:aspect-auto md:min-h-0 p-4">
             <img
               src={`${CDN}/6a060cd7503d72ff714e6608_d9376cd23fdf1d712352ed21555d1256_small-portrait1.avif`}
-              alt="ApnaGhar studio"
+              alt="ApnaGhars studio"
               loading="lazy"
               className="h-full w-full object-cover"
             />
@@ -296,7 +296,7 @@ const About = () => {
               "Architecture is about creating experiences, not objects."
             </h2>
             <p className="mt-8 font-mono text-sm uppercase">
-              Alexander ApnaGhar
+              Alexander ApnaGhars
               <br />
               Founder & Principal Architect
             </p>

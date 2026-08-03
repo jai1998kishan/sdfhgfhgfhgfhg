@@ -10,7 +10,7 @@
 //         <div className="md:col-span-4">
 //           <img
 //             src={`${CDN}/6a060cd7503d72ff714e660a_c1fa0ab362a4d2d3fb45f65ea1499e2c_small-portrait3.avif`}
-//             alt="Edward ApnaGhar"
+//             alt="Edward ApnaGhars"
 //             loading="lazy"
 //             className="w-full aspect-[3/4] object-cover"
 //           />
@@ -18,12 +18,12 @@
 //         <div className="md:col-span-7 md:col-start-6">
 //           <Quote size={36} strokeWidth={1} className="text-clay" />
 //           <p className="display text-3xl md:text-5xl leading-[1.1] mt-8">
-//             We founded ApnaGhar with the belief that residential design should
+//             We founded ApnaGhars with the belief that residential design should
 //             feel timeless, calm, and deeply personal. Every project is
 //             approached with clarity, warmth, and careful attention to detail.
 //           </p>
 //           <div className="mt-10">
-//             <p className="font-display text-xl">Edward ApnaGhar</p>
+//             <p className="font-display text-xl">Edward ApnaGhars</p>
 //             <p className="eyebrow mt-1">Founder & Principal Architect</p>
 //           </div>
 //         </div>
@@ -49,7 +49,7 @@ export default function FounderQuote() {
         <div className="flex items-start justify-between md:col-span-4 md:block">
           <img
             src={`${CDN}/6a060cd7503d72ff714e660a_c1fa0ab362a4d2d3fb45f65ea1499e2c_small-portrait3.avif`}
-            alt="Edward ApnaGhar"
+            alt="Edward ApnaGhars"
             loading="lazy"
             className="w-24 h-24 aspect-square md:w-full md:h-auto md:aspect-[3/4] object-cover"
           />
@@ -76,8 +76,8 @@ export default function FounderQuote() {
 
           <p className="font-sans text-2xl md:text-4xl font-bold leading-[1.15] mt-6 md:mt-8">
             <span className="text-ink">
-              We founded ApnaGhar with the belief that residential design should
-              feel timeless, calm, and deeply personal.
+              We founded ApnaGhars with the belief that residential design
+              should feel timeless, calm, and deeply personal.
             </span>{" "}
             <span className="text-muted">
               Every project is approached with clarity, warmth, and careful
@@ -87,7 +87,7 @@ export default function FounderQuote() {
           </p>
 
           <p className="eyebrow mt-8 md:mt-10">
-            Edward ApnaGhar <span className="mx-2">·</span> Founder &amp;
+            Edward ApnaGhars <span className="mx-2">·</span> Founder &amp;
             Principal Architect
           </p>
         </div>

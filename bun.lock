@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "ApnaGhar-architecture-clone",
+      "name": "ApnaGhars-architecture-clone",
       "dependencies": {
         "lucide-react": "^0.451.0",
         "react": "^18.3.1",

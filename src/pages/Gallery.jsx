@@ -124,7 +124,7 @@ export default function Gallery() {
       <section className="relative pt-40 pb-20 border-b hairline">
         <div className="container-x">
           <div className="flex items-center gap-3 eyebrow mb-10">
-            <span>ApnaGhar</span>
+            <span>ApnaGhars</span>
             <span className="opacity-40">/</span>
             <span>Gallery</span>
           </div>

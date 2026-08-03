@@ -1,6 +1,6 @@
-# ApnaGhar — Architecture Studio (React + Vite + Tailwind)
+# ApnaGhars — Architecture Studio (React + Vite + Tailwind)
 
-A React clone of the ApnaGhar architecture Webflow template.
+A React clone of the ApnaGhars architecture Webflow template.
 
 ## Stack
 

@@ -13,7 +13,7 @@ export const testimonials = [
     image:
       "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=800&h=1000&fit=crop",
     quote:
-      "Working with ApnaGhar felt collaborative from the very beginning. The balance of materials, lighting, and spatial flow completely changed how we experience our home.",
+      "Working with ApnaGhars felt collaborative from the very beginning. The balance of materials, lighting, and spatial flow completely changed how we experience our home.",
   },
   {
     role: "Private client",

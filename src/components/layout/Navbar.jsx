@@ -132,7 +132,7 @@ export default function Navbar() {
             to="/"
             className="font-display font-extrabold text-3xl tracking-tight"
           >
-            ApnaGhar<span className="text-clay">.</span>
+            ApnaGhars<span className="text-clay">.</span>
           </Link>
 
           {/* Desktop menu button — unchanged position, just hidden on mobile now */}

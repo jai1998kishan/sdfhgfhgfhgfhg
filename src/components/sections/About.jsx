@@ -15,7 +15,7 @@ export default function About() {
         <div className="md:col-span-2 text-bone flex items-start md:items-end">
           <div className="p-6 md:p-10 lg:p-12">
             <h2 className="font-sans text-xl md:text-2xl lg:text-2xl font-medium leading-[1.15] max-w-xl">
-              Founded in 2003, ApnaGhar is a deliberately small practice. The
+              Founded in 2003, ApnaGhars is a deliberately small practice. The
               principal architect leads every project from brief to handover —
               so the thinking that shapes the first sketch carries all the way
               through to the last detail on site.
@@ -42,7 +42,7 @@ export default function About() {
         <div className="aspect-[4/3] md:aspect-auto md:min-h-0 p-4">
           <img
             src={`${CDN}/6a060cd7503d72ff714e6608_d9376cd23fdf1d712352ed21555d1256_small-portrait1.avif`}
-            alt="ApnaGhar studio"
+            alt="ApnaGhars studio"
             loading="lazy"
             className="h-full w-full object-cover"
           />

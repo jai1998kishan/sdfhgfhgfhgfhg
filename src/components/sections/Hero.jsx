@@ -56,7 +56,7 @@ export default function Hero() {
 
         <div className="mt-16 flex items-center justify-between">
           <div>
-            <p className="font-display text-4xl">ApnaGhar</p>
+            <p className="font-display text-4xl">ApnaGhars</p>
             <p className="eyebrow mt-1">
               Architecture & interior design studio
             </p>
