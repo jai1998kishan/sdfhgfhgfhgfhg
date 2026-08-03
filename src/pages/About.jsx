@@ -1,208 +1,16 @@
-// import React from "react";
-// import { ArrowRight } from "lucide-react";
-// import { Link } from "react-router-dom";
-
-// const principles = [
-//   {
-//     title: "Context",
-//     text: "Every project begins with understanding its surroundings, history, and relationship with people.",
-//   },
-//   {
-//     title: "Material",
-//     text: "We believe materials create atmosphere. Every texture, surface, and detail has purpose.",
-//   },
-//   {
-//     title: "Longevity",
-//     text: "Our architecture is designed beyond trends, creating spaces that age with elegance.",
-//   },
-// ];
-
-// const timeline = [
-//   {
-//     year: "2003",
-//     title: "Studio Founded",
-//     text: "ApnaGhar began as a small architecture practice focused on residential design.",
-//   },
-//   {
-//     year: "2010",
-//     title: "International Work",
-//     text: "The studio expanded into hospitality and commercial architecture.",
-//   },
-//   {
-//     year: "2018",
-//     title: "Global Recognition",
-//     text: "Projects received recognition across international architecture platforms.",
-//   },
-//   {
-//     year: "2026",
-//     title: "Future Vision",
-//     text: "Continuing to design thoughtful spaces for generations ahead.",
-//   },
-// ];
-
-// const About = () => {
-//   return (
-//     <main className="bg-[#f5f0eb] text-[#2d2420]">
-//       {/* Hero */}
-//       <section className="px-4 md:px-8 pt-32 pb-20 max-w-7xl mx-auto">
-//         <p className="font-mono text-xs uppercase tracking-[0.25em] text-[#a5673f] mb-6">
-//           About Studio
-//         </p>
-
-//         <h1 className="font-display text-[12vw] md:text-[8vw] leading-[0.9] tracking-tight">
-//           Designing
-//           <br />
-//           Spaces
-//           <br />
-//           With Meaning
-//         </h1>
-//       </section>
-
-//       {/* Hero Image */}
-//       <section className="px-4 md:px-8">
-//         <div className="max-w-[1600px] mx-auto aspect-[16/8] overflow-hidden">
-//           <img
-//             src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&h=900&fit=crop"
-//             alt="Architecture interior"
-//             className="w-full h-full object-cover"
-//           />
-//         </div>
-//       </section>
-
-//       {/* Introduction */}
-//       <section className="px-4 md:px-8 py-24 max-w-7xl mx-auto">
-//         <div className="grid md:grid-cols-2 gap-16">
-//           <h2 className="font-display text-4xl md:text-6xl leading-tight">
-//             Architecture that connects people, place, and purpose.
-//           </h2>
-
-//           <div className="space-y-6 text-lg text-[#4a3a34]/75 leading-relaxed">
-//             <p>
-//               ApnaGhar is an architecture studio creating refined residential,
-//               commercial, and cultural environments.
-//             </p>
-
-//             <p>
-//               Our approach combines timeless design principles with modern
-//               technology, creating spaces that feel natural, balanced, and
-//               enduring.
-//             </p>
-
-//             <p>
-//               From the first sketch to the final detail, we collaborate closely
-//               with clients to transform ideas into meaningful architecture.
-//             </p>
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* Principles */}
-
-//       <section className="px-4 md:px-8 py-20 bg-[#ebe5dd]">
-//         <div className="max-w-7xl mx-auto">
-//           <p className="font-mono text-xs uppercase tracking-widest mb-12">
-//             Our Philosophy
-//           </p>
-
-//           <div className="grid md:grid-cols-3 gap-10">
-//             {principles.map((item) => (
-//               <div
-//                 key={item.title}
-//                 className="border-t border-[#4a3a34]/30 pt-8"
-//               >
-//                 <h3 className="font-display text-3xl mb-5">{item.title}</h3>
-
-//                 <p className="text-[#4a3a34]/70 leading-relaxed">{item.text}</p>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* Founder */}
-
-//       <section className="px-4 md:px-8 py-24 max-w-7xl mx-auto">
-//         <div className="grid md:grid-cols-2 gap-16 items-center">
-//           <div className="aspect-[4/5] overflow-hidden">
-//             <img
-//               src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=900&h=1100&fit=crop"
-//               alt="Studio founder"
-//               className="w-full h-full object-cover"
-//             />
-//           </div>
-
-//           <div>
-//             <p className="font-mono text-xs uppercase tracking-widest text-[#a5673f] mb-8">
-//               Studio Director
-//             </p>
-
-//             <blockquote className="font-display text-4xl md:text-5xl leading-tight">
-//               "Great architecture is not about creating objects. It is about
-//               creating experiences."
-//             </blockquote>
-
-//             <p className="mt-8 font-mono text-sm uppercase tracking-widest">
-//               Alexander ApnaGhar
-//               <br />
-//               Founder & Principal Architect
-//             </p>
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* Timeline */}
-
-//       <section className="px-4 md:px-8 py-24 bg-[#2d2420] text-[#f5f0eb]">
-//         <div className="max-w-7xl mx-auto">
-//           <p className="font-mono text-xs uppercase tracking-widest mb-12 opacity-60">
-//             Our Journey
-//           </p>
-
-//           <div className="space-y-10">
-//             {timeline.map((item) => (
-//               <div
-//                 key={item.year}
-//                 className="grid md:grid-cols-3 border-t border-white/20 pt-8"
-//               >
-//                 <span className="font-mono">{item.year}</span>
-
-//                 <h3 className="font-display text-3xl">{item.title}</h3>
-
-//                 <p className="text-white/60">{item.text}</p>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* CTA */}
-
-//       <section className="px-4 md:px-8 py-32 max-w-7xl mx-auto text-center">
-//         <h2 className="font-display text-5xl md:text-7xl leading-tight">
-//           Let's create something
-//           <br />
-//           meaningful together.
-//         </h2>
-
-//         <Link
-//           to="/contact"
-//           className="inline-flex items-center gap-4 mt-10 border border-[#4a3a34] px-8 py-4 font-mono uppercase tracking-widest text-sm hover:bg-[#4a3a34] hover:text-[#f5f0eb] transition"
-//         >
-//           Start A Project
-//           <ArrowRight size={18} />
-//         </Link>
-//       </section>
-//     </main>
-//   );
-// };
-
-// export default About;
-
-//========================================
-
 import React, { useEffect, useState } from "react";
+import Section from "@/components/ui/Section";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import { Plus } from "lucide-react";
+import Principles from "../components/sections/Principles";
+
+import { Maximize2, ArrowUpRight } from "lucide-react";
+import AboutHero from "../components/sections/Abouthero";
+
+const marqueeItems = Array(8).fill("Studio Achievements");
+
+const CDN = "https://cdn.prod.website-files.com/6a060cd7503d72ff714e6294";
 
 const heroSlides = [
   {
@@ -269,7 +77,7 @@ const About = () => {
   }, []);
 
   return (
-    <main className="bg-[#f5f0eb] text-[#2d2420]">
+    <main className=" text-[#2d2420]">
       <section className="relative h-screen overflow-hidden">
         {heroSlides.map((slide, index) => (
           <img
@@ -280,7 +88,11 @@ const About = () => {
           />
         ))}
 
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+        {/* Top gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-transparent to-transparent" />
+
+        {/* Bottom gradient */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
 
         <div className="absolute bottom-0 left-0 w-full text-white">
           <div className="px-5 md:px-8 pb-10">
@@ -328,44 +140,145 @@ const About = () => {
         </div>
       </section>
 
-      <section className="px-4 md:px-8 py-24 max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-16">
-          <h2 className="font-display text-4xl md:text-6xl">
-            Architecture that connects people, place and purpose.
-          </h2>
+      <Section id="about" className="border-t hairline p-0">
+        {/* =========================
+          FIRST SPLIT SECTION
+      ========================== */}
+        <div className="grid md:min-h-[90vh] md:grid-cols-5 ">
+          {/* Text — sits at the top on mobile, bottom-aligned at md+ */}
+          <div className="md:col-span-2 text-black flex items-start md:items-end">
+            <div className="p-6 md:p-10 lg:p-12">
+              <h2 className="font-sans text-xl md:text-2xl lg:text-2xl font-medium leading-[1.15] max-w-xl">
+                ApnaGhar is an architecture and interior design studio working
+                on private houses, considered interiors, and heritage homes. We
+                take the brief, the site, and the client equally seriously, from
+                the first conversation to the final detail.
+              </h2>
+            </div>
+          </div>
 
-          <div className="space-y-6 text-lg text-[#4a3a34]/70">
-            <p>
-              ApnaGhar is an architecture and interior design studio creating
-              refined residential, commercial and cultural spaces.
-            </p>
-            <p>
-              Our approach combines timeless principles with contemporary
-              solutions.
-            </p>
+          {/* Image — natural height on mobile, fills the column at md+ */}
+          <div className="md:col-span-3 aspect-[4/3] md:aspect-auto md:min-h-0">
+            <img
+              src={`${CDN}/6a060cd7503d72ff714e65ff_48c19f09c8468d5bc67a2efb745438e2_template-img-3.avif`}
+              alt="Modern residential interior"
+              loading="lazy"
+              className="h-full w-full object-cover p-4"
+            />
           </div>
         </div>
+
+        {/* =========================
+          SECOND SPLIT SECTION
+      ========================== */}
+        <div className="grid md:min-h-[90vh] md:grid-cols-2 bg-[#B9B7B2]">
+          {/* Image — natural height on mobile, fills the column at md+ */}
+          <div className="aspect-[4/3] md:aspect-auto md:min-h-0 p-4">
+            <img
+              src={`${CDN}/6a060cd7503d72ff714e6608_d9376cd23fdf1d712352ed21555d1256_small-portrait1.avif`}
+              alt="ApnaGhar studio"
+              loading="lazy"
+              className="h-full w-full object-cover"
+            />
+          </div>
+
+          {/* Text */}
+          <div className="flex items-start">
+            <div className="p-6 md:p-10 lg:p-12">
+              <h2 className="font-sans text-xl md:text-xl lg:text-2xl font-medium leading-[1.15] max-w-2xl mb-5">
+                Architecture and interior design studio
+              </h2>
+              <h5 className="font-sans text-sm md:text-base lg:text-lg font-medium leading-[1.15] max-w-2xl">
+                Every project begins with reading the site and the brief
+                honestly, then deciding what the new work should add, contrast,
+                or preserve. Nothing is drawn before the questions have been
+                asked properly.
+              </h5>
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      <section className="flex flex-col items-center px-4 md:px-8 py-16 md:py-24 max-w-7xl mx-auto ">
+        <h2 className="font-sans font-bold leading-tight max-w-4xl text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+          <span className="text-[#2d2420]">
+            From architecture to interiors, we create refined residential spaces
+            shaped by{" "}
+          </span>
+          <span className="text-[#2d2420]/50">detail and intention.</span>
+        </h2>
+
+        <Link
+          to="/gallery"
+          className="mt-8 md:mt-10 inline-flex items-center gap-2 border border-[#2d2420] border-b-2 border-b[#2d2420] px-5 py-2.5 font-mono text-xs uppercase tracking-widest transition-colors hover-split-up"
+        >
+          Gallery
+          <Plus size={16} strokeWidth={1.5} />
+        </Link>
       </section>
 
-      <section className="bg-[#ebe5dd] px-4 md:px-8 py-24">
-        <div className="max-w-7xl mx-auto">
-          <p className="font-mono text-xs uppercase tracking-widest mb-12">
-            Our Philosophy
-          </p>
+      <Principles />
 
-          <div className="grid md:grid-cols-3 gap-10">
-            {principles.map((item) => (
-              <div
-                key={item.title}
-                className="border-t border-[#4a3a34]/30 pt-8"
+      <section className="relative  text-[#1a1512] overflow-hidde">
+        {/* Marquee strip */}
+        <div className="border-y border-[#1a1512] py-2 overflow-hidden">
+          <div className="flex w-max animate-[marquee_24s_linear_infinite]">
+            {[...marqueeItems, ...marqueeItems].map((item, i) => (
+              <span
+                key={i}
+                className="mx-4 shrink-0 font-mono text-xs md:text-sm uppercase tracking-widest"
               >
-                <h3 className="font-display text-3xl mb-5">{item.title}</h3>
-                <p className="text-[#4a3a34]/70">{item.text}</p>
-              </div>
+                {item}
+              </span>
             ))}
           </div>
         </div>
+
+        <style>{`
+        @keyframes marquee {
+          from { transform: translateX(0); }
+          to { transform: translateX(-50%); }
+        }
+      `}</style>
+
+        <div className="relative px-4 md:px-6 pt-8 md:pt-16 pb-16 md:pb-12 max-w-[1800px] mx-auto">
+          {/* Headline — three lines, staggered spread */}
+          <h1 className="font-sans font-bold uppercase leading-[0.95] tracking-tight">
+            <span className="block text-[10vw] sm:text-[11vw] md:text-[8.5vw]">
+              People who
+            </span>
+            <span className="block text-[10vw] sm:text-[11vw] md:text-[8.5vw] text-right md:text-left md:pl-[18vw]">
+              Understand
+            </span>
+            <span className="flex items-baseline justify-between gap-4 text-[10vw] sm:text-[11vw] md:text-[8.5vw]">
+              <span>Modern</span>
+              <span>Living</span>
+            </span>
+          </h1>
+
+          {/* Stack on mobile (description, then button, left-aligned);
+              switch to a side-by-side row only at md and up. */}
+          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between md:gap-0 mt-8 md:mt-10">
+            {/* Description */}
+            <p className="max-w-md uppercase text-sm md:text-base leading-relaxed">
+              Meet the architects and interior designers shaping refined
+              residential spaces through clarity, collaboration, and timeless
+              design.
+            </p>
+
+            {/* Get in touch button */}
+            <a
+              href="#contact"
+              className="self-start inline-flex items-center gap-2 border border-b-2 border-[#1a1512] px-5 py-3 md:px-6 md:py-3.5 font-mono text-xs md:text-sm uppercase tracking-widest hover-split-up  transition-colors"
+            >
+              Get in touch
+              <Plus size={16} strokeWidth={1.5} />
+            </a>
+          </div>
+        </div>
       </section>
+
+      <AboutHero />
 
       <section className="px-4 md:px-8 py-24 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-center">

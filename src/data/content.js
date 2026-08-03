@@ -96,15 +96,30 @@ export const clients = [
 //   },
 // ];
 
+// export const journal = [
+//   {
+//     tag: "Project Stories",
+//     title: "Embodied carbon in heritage buildings: A counterintuitive case",
+//     image: `${CDN}/6a0b55b0021b82f52db4bc6d_sunlight-interior-4.avif`,
+//   },
+//   {
+//     tag: "Design Insights",
+//     title: "Why we still draw by hand before we draw on screen",
+//     image: `${CDN}/6a0b55aa20b3033620dfb2a5_sunlight-interior-1.avif`,
+//   },
+// ];
+
 export const journal = [
   {
     tag: "Project Stories",
     title: "Embodied carbon in heritage buildings: A counterintuitive case",
+    href: "/journal/embodied-carbon-in-heritage-buildings",
     image: `${CDN}/6a0b55b0021b82f52db4bc6d_sunlight-interior-4.avif`,
   },
   {
     tag: "Design Insights",
     title: "Why we still draw by hand before we draw on screen",
+    href: "/journal/why-we-still-draw-by-hand",
     image: `${CDN}/6a0b55aa20b3033620dfb2a5_sunlight-interior-1.avif`,
   },
 ];

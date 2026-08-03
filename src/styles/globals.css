@@ -193,7 +193,7 @@
   content: "";
   position: absolute;
   bottom: 0;
-  width: 50%;
+  width: calc(50% + 1px);
   height: 100%;
   background: var(--hover-fill-color, #5e3e3e);
   transform: translateY(100%);
@@ -233,7 +233,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: var(--hover-fill-color, #5e3e3e);
+  background: var(--hover-fill-color, #8a6c6c);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.45s ease;
@@ -245,5 +245,5 @@
 }
 
 .hover-fill:hover {
-  color: var(--hover-text-color, #fff);
+  color: var(--hover-text-color, black);
 }

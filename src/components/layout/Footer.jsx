@@ -48,6 +48,38 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#d6d3cb]">
+      <section className="relative h-[380px] sm:h-[440px] md:h-[500px] lg:h-[560px] overflow-hidden">
+        {/* Background image */}
+        <img
+          src="https://images.unsplash.com/photo-1595515106969-1ce29566ff1c?auto=format&fit=crop&w=2000&q=80"
+          alt="Hand-finished wood flooring detail"
+          loading="lazy"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+
+        {/* Left-to-right scrim so the text stays legible over the photo */}
+        <div className="absolute inset-0 bg-gradient-to-r from-ink/80 via-ink/40 to-transparent" />
+
+        {/* Content */}
+        <div className="relative z-10 h-full flex items-end px-6 sm:px-10 md:px-16 pb-8 sm:pb-10 md:pb-14">
+          <div className="max-w-lg">
+            <h2 className="font-sans font-bold uppercase leading-snug text-bone text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+              Have a project in mind?
+              <br />
+              Let us hear about it.
+            </h2>
+
+            <Link
+              to="/contact"
+              className="mt-6 md:mt-8 inline-flex items-center gap-2 border border-bone/50 text-bone px-5 py-2.5 font-mono text-[11px] md:text-xs uppercase tracking-widest transition-colors hover-split-up"
+            >
+              Consultation
+              <Plus size={16} strokeWidth={1.5} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Main Footer */}
       <div className="px-4 md:px-8 max-w-7xl mx-auto pt-14 md:pt-16">
         {/* Top Info */}

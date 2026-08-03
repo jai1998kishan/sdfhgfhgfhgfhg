@@ -36,7 +36,7 @@ export default function CTA() {
               {/* <br /> */}
               materiality, and clarity.
             </p>
-            <button className="group inline-flex items-center gap-2 border border-[#4a3a34] rounded-sm px-4 py-2 font-mono text-sm uppercase tracking-widest text-[#4a3a34] transition-colors duration-300 hover:bg-[#8a6f66] hover:border-[#8a6f66] hover:text-[#f5f0eb] font-medium border-b-4">
+            <button className="group inline-flex items-center gap-2 border border-[#4a3a34] rounded-sm px-4 py-2 font-mono text-sm uppercase tracking-widest text-[#4a3a34] transition-colors duration-300 hover-split-up font-medium border-b-4">
               Start Your Project
               <span className="relative h-[18px] w-[18px] shrink-0">
                 <Plus

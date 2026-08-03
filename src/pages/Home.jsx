@@ -1,7 +1,7 @@
 import Hero from "@/components/sections/Hero";
 import Achievements from "@/components/sections/Achievements";
 import About from "@/components/sections/About";
-import Principles from "@/components/sections/Principles";
+import PrinciplesCTA from "@/components/sections/PrinciplesCTA";
 import FounderQuote from "@/components/sections/FounderQuote";
 import Services from "@/components/sections/Services";
 import Clients from "@/components/sections/Clients";
@@ -16,7 +16,7 @@ export default function Home() {
       <Hero />
       <Achievements />
       <About />
-      <Principles />
+      <PrinciplesCTA />
       <FounderQuote />
       <Services />
       <Clients />
