@@ -11,7 +11,7 @@ export default function Principles() {
 
   return (
     <section className="relative overflow-hidden">
-      {/* Background photo + dark overlay */}
+      {/* Background photo + dark overlay.. */}
       <img
         src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=80"
         alt="Contemporary living room interior"
